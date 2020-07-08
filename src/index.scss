@@ -7,7 +7,6 @@
   line-height: 1.4em;
 }
 
-
 .md-RichEditor-editor {
   cursor: text;
   margin-top: 10px;
@@ -35,13 +34,13 @@
 }
 
 .md-RichEditor-editor .md-RichEditor-blockquote {
-  border-left: 5px solid #4CA8DE;
+  border-left: 5px solid #4ca8de;
   color: #555;
   //font-family: 'Hoefler Text', 'Georgia', serif;
   font-size: 1.2em;
   margin: 0;
   padding: 10px 0 10px 20px;
-  background-color: #E2F2FF;
+  background-color: #e2f2ff;
 }
 
 .md-RichEditor-blockquote {
@@ -78,3 +77,13 @@
     display: block;
   }
 }
+
+@import "./basic.scss";
+@import "./components/addbutton.scss";
+@import "./components/toolbar.scss";
+@import "./components/blocks/text.scss";
+@import "./components/blocks/atomic.scss";
+@import "./components/blocks/blockquotecaption.scss";
+@import "./components/blocks/caption.scss";
+@import "./components/blocks/todo.scss";
+@import "./components/blocks/image.scss";
