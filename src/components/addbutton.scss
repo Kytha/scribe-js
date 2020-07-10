@@ -1,7 +1,7 @@
 $add-btn-width: 30px;
 
-
 .md-side-toolbar {
+  background: inherit;
   display: flex;
   position: absolute;
   z-index: 1;
@@ -11,9 +11,9 @@ $add-btn-width: 30px;
 }
 
 .md-sb-button {
-  background: none;
-  border: 1px solid #5b5b5b;
-  color: #6D6D6D;
+  background: inherit;
+  border: 1px solid #66cbe4;
+  color: #66cbe4;
   cursor: pointer;
   height: $add-btn-width;
   width: $add-btn-width;
@@ -21,6 +21,9 @@ $add-btn-width: 30px;
   font-weight: bold;
   font-size: 20px;
   margin-right: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   transition: all 0.2s ease;
 
@@ -31,17 +34,17 @@ $add-btn-width: 30px;
   }
 
   &:hover {
-    color: green;
+    color: #45c2ae;
+    border: 1px solid #45c2ae;
   }
 
   &.md-sb-img-button {
     background: none;
-    background-color: white;
   }
 
   svg path {
     stroke-width: 0;
-    fill: #545454;
+    fill: #66cbe4;
   }
 }
 
@@ -59,7 +62,7 @@ $add-btn-width: 30px;
 .md-add-btn-anim-appear.md-add-btn-anim-appear-active {
   transform: translate3d(0px, 0px, 0px);
   opacity: 1;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .md-add-btn-anim-enter {

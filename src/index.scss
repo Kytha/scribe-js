@@ -1,5 +1,5 @@
 .md-RichEditor-root {
-  background: #fff;
+  background: inherit;
   box-sizing: border-box;
   //font-family: 'Georgia', serif;
   padding: 15px 30px;
@@ -8,8 +8,8 @@
 }
 
 .md-RichEditor-editor {
+  background: inherit;
   cursor: text;
-  margin-top: 10px;
   position: relative;
   margin: 0 auto;
 
@@ -17,12 +17,26 @@
     font-size: 1.3em;
     margin: 1.2em 0;
   }
+
+  h2 {
+    font-size: 1.5em;
+    margin: 1.2em 0;
+  }
+}
+
+@import "node_modules/draft-js/dist/Draft";
+.DraftEditor-root {
+  margin-left: 6px;
 }
 
 .md-RichEditor-editor .public-DraftEditorPlaceholder-root,
 .md-RichEditor-editor .public-DraftEditor-content {
   margin: 0px -15px -15px;
   padding: 15px;
+}
+
+.public-DraftEditorPlaceholder-root {
+  position: absolute;
 }
 
 .md-RichEditor-editor .public-DraftEditor-content {
@@ -50,6 +64,8 @@
 }
 
 .public-DraftEditor-content {
+  position: relative;
+  z-index: 1;
   .md-block:first-child {
     margin-top: 0;
     padding-top: 0;

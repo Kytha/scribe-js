@@ -3,18 +3,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-  entry: ["./src/index.js", "./src/index.scss"],
+  entry: ["./src/index.scss"],
   output: {
     path: path.resolve(__dirname, "lib"),
-    filename: "index.js",
+    filename: "scribe.css",
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
-      },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
